@@ -12,7 +12,9 @@ syntax on
 " カラースキーマを設定する。jellybeansは最初はないカラースキーマだが、次回説明するプラグインにて説明する。
 "colorscheme jellybeans
 " 今のところ好きなカラースキーマを使っていて大丈夫。
-colorscheme default
+
+colorscheme hybrid
+
 " ターミナルの右端で文字を折り返さない
 set nowrap
 
