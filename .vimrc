@@ -5,6 +5,8 @@ let b:match_ignorecase = 1
 " }}}
 
 " usability {{{
+" 全角記号が半角幅なのを補正する
+set ambiwidth=double
 " 挿入モードから抜ける際にIMEがオフとなる
 set imdisable
 " set t_Co=256は256色対応のターミナルソフトでのみ作用するので、Winのコマンドプロンプト使っている人などは ダブルコーテーションでコメントアウトしといて
@@ -12,7 +14,7 @@ set t_Co=256
 " 色づけを on にする
 syntax on
 " ターミナルの右端で文字を折り返さない
-set nowrap
+"set nowrap
 " tempファイルを作らない。編集中に電源落ちまくるし、とかいう人はコメントアウトで
 set noswapfile
 " ハイライトサーチを有効にする。文字列検索は /word とか * ね
