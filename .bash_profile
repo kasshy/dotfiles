@@ -14,3 +14,5 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+complete -C aws_completer aws
+export AWS_CONFIG_FILE=/home/ec2-user/aws.config
